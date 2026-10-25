@@ -126,7 +126,7 @@ For free-plan limits, narrate and inspect results between scenarios rather than 
 - `docs/requirements_checklist.md`: requirement-by-requirement review.
 - `docs/screencast_guide.md`: complete recording preparation.
 
-The project is verified: 43 automated tests and all five real Groq-backed scenarios passed. The final screencast is 5 minutes 31 seconds, edited from three genuine live browser captures, with authorized synthesized voice narration. [Public repository](https://github.com/by-aseel/campus-study-planner-c5). [Watch or download the screencast](https://github.com/by-aseel/campus-study-planner-c5/blob/main/media/campus-study-planner-demonstration.mp4). See `docs/submission_notes.md` for the recording details.
+The project is verified: 43 automated tests and all five real Groq-backed scenarios passed. The final screencast is 5 minutes 31 seconds, edited from three genuine live browser captures, with authorized synthesized voice narration. [Public repository](https://github.com/by-aseel/campus-study-planner-c5). [Watch or download the screencast](https://github.com/by-aseel/campus-study-planner-c5/raw/refs/heads/main/media/campus-study-planner-demonstration.mp4). See `docs/submission_notes.md` for the recording details.
 
 ## Implementation references
 

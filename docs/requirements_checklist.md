@@ -31,7 +31,11 @@ Reviewed October 25, 2026 against the supplied C5 assignment. The status below i
 | Show full live agent/client/server round trip | Real model-selected tool, arguments, returned result, observed call log, and final agent answer. | Complete |
 | Discuss challenges and solutions | Narration explains read/write boundaries, shared operations, predictable errors, and atomic retry handling. | Complete |
 | Repository URL | https://github.com/by-aseel/campus-study-planner-c5 (public). | Published |
-| Video URL | https://github.com/by-aseel/campus-study-planner-c5/blob/main/media/campus-study-planner-demonstration.mp4 | Published |
+| Video URL | https://github.com/by-aseel/campus-study-planner-c5/raw/refs/heads/main/media/campus-study-planner-demonstration.mp4 | Published |
+
+## Submission review
+
+Keep API keys private. Submit the reading summary, reflection, source repository link, and actual hosted video link listed in `submission_notes.md`. The narration is synthesized with the speaker's explicit authorization.
 
 ## Submission review
 
