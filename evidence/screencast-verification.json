@@ -1,52 +1,147 @@
 {
-  "duration_seconds": 330.64,
+  "duration_seconds": 354.93,
   "width": 1280,
   "height": 720,
   "fps": 25,
   "audio_codec": "AAC",
   "full_file_decode_passed": true,
-  "narration": "Qwen TTS and local OpenVoice conversion of the speaker's explicitly authorized voice and approved preview",
-  "visual_source": "Three genuine live browser captures; explanatory holds and edits disclosed",
-  "narration_segments": [
+  "all_five_live_scenarios_passed": true,
+  "same_live_database_for_all_scenarios": true,
+  "final_database_row_count": 2,
+  "visual_source": "Five complete live browser query-to-answer captures at original speed; cuts only between chapters. Static introduction, architecture and summary cards.",
+  "narration": "Previously approved synthesized narration from the speaker's explicitly authorized voice sample; no voice reference included.",
+  "live_capture_checks": [
+    {
+      "scenario": "DATA: information only",
+      "frame_count": 560,
+      "video_start_seconds": 70,
+      "duration_seconds": 42.92906403541565,
+      "submitted_seconds": 0.3344407081604004,
+      "final_answer_seconds": 2.228996992111206,
+      "maximum_capture_interval_seconds": 0.43069005012512207,
+      "speed_multiplier": 1,
+      "internal_cuts": 0,
+      "manifest_sha256": "30327c71ec41858a8ae53f71a4726e284e32aac55f81454afc127271a1c45695",
+      "all_source_frames_in_concat_timeline": true
+    },
+    {
+      "scenario": "ACTION: save a known title",
+      "frame_count": 623,
+      "video_start_seconds": 112.92906403541565,
+      "duration_seconds": 48.066067934036255,
+      "submitted_seconds": 0.3365974426269531,
+      "final_answer_seconds": 2.550964832305908,
+      "maximum_capture_interval_seconds": 0.22902584075927734,
+      "speed_multiplier": 1,
+      "internal_cuts": 0,
+      "manifest_sha256": "9c1c17d1b3db706f8f719713b9d19145991fcb70d3885b73adc08b2a7ebe8aca",
+      "all_source_frames_in_concat_timeline": true
+    },
+    {
+      "scenario": "ORCHESTRATION: lookup then save",
+      "frame_count": 577,
+      "video_start_seconds": 160.9951319694519,
+      "duration_seconds": 42.10556662082672,
+      "submitted_seconds": 0.3123347759246826,
+      "final_answer_seconds": 2.060255765914917,
+      "maximum_capture_interval_seconds": 0.29860901832580566,
+      "speed_multiplier": 1,
+      "internal_cuts": 0,
+      "manifest_sha256": "50c7357c5be24874bce0334e6acd58c4f906db3ee9d5b0c50f5be9d193845fcb",
+      "all_source_frames_in_concat_timeline": true
+    },
+    {
+      "scenario": "FAILURE: unavailable topic",
+      "frame_count": 605,
+      "video_start_seconds": 203.10069859027863,
+      "duration_seconds": 43.918527126312256,
+      "submitted_seconds": 0.2530326843261719,
+      "final_answer_seconds": 1.3067164421081543,
+      "maximum_capture_interval_seconds": 0.3055849075317383,
+      "speed_multiplier": 1,
+      "internal_cuts": 0,
+      "manifest_sha256": "85e100e6c55ea5801898a8a7cc71f6dbc14ae0649a2bbac8087d0c47596350ea",
+      "all_source_frames_in_concat_timeline": true
+    },
+    {
+      "scenario": "RETRY: same intended task",
+      "frame_count": 648,
+      "video_start_seconds": 247.01922571659088,
+      "duration_seconds": 46.913639068603516,
+      "submitted_seconds": 0.31360769271850586,
+      "final_answer_seconds": 1.4911003112792969,
+      "maximum_capture_interval_seconds": 0.20147109031677246,
+      "speed_multiplier": 1,
+      "internal_cuts": 0,
+      "manifest_sha256": "b443e2829b5c1121969b4a4c9fad3ba3b65c0d5da4aa66106edd7b9c11580131",
+      "all_source_frames_in_concat_timeline": true
+    }
+  ],
+  "chapters": [
     {
       "index": 0,
-      "audio_seconds": 38.458,
-      "duration": 40.458185941043084
+      "source": "overview-card",
+      "start": 0,
+      "duration": 35,
+      "audio_seconds": 31.30049886621315,
+      "audio_delay": 0.5
     },
     {
       "index": 1,
-      "audio_seconds": 29.794,
-      "duration": 35
+      "source": "architecture-card",
+      "start": 35,
+      "duration": 35,
+      "audio_seconds": 29.79375,
+      "audio_delay": 0.5
     },
     {
       "index": 2,
-      "audio_seconds": 31.074,
-      "duration": 38
+      "source": "data-v2",
+      "start": 70,
+      "duration": 42.92906403541565,
+      "audio_seconds": 31.07375,
+      "audio_delay": 6
     },
     {
       "index": 3,
-      "audio_seconds": 36.114,
-      "duration": 42
+      "source": "action",
+      "start": 112.92906403541565,
+      "duration": 48.066067934036255,
+      "audio_seconds": 36.11375,
+      "audio_delay": 6
     },
     {
       "index": 4,
-      "audio_seconds": 29.874,
-      "duration": 35
+      "source": "orchestration",
+      "start": 160.9951319694519,
+      "duration": 42.10556662082672,
+      "audio_seconds": 29.87375,
+      "audio_delay": 6
     },
     {
       "index": 5,
-      "audio_seconds": 33.954,
-      "duration": 40
+      "source": "failure",
+      "start": 203.10069859027863,
+      "duration": 43.918527126312256,
+      "audio_seconds": 33.95375,
+      "audio_delay": 6
     },
     {
       "index": 6,
-      "audio_seconds": 38.737,
-      "duration": 42
+      "source": "retry",
+      "start": 247.01922571659088,
+      "duration": 46.913639068603516,
+      "audio_seconds": 38.736825396825395,
+      "audio_delay": 4
     },
     {
       "index": 7,
-      "audio_seconds": 56.169,
-      "duration": 58.16925170068027
+      "source": "summary-card",
+      "start": 293.9328647851944,
+      "duration": 61,
+      "audio_seconds": 56.16925170068027,
+      "audio_delay": 0.5
     }
-  ]
+  ],
+  "output_sampling": "25 fps sampling of the complete original capture timeline"
 }

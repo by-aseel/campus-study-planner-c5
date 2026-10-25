@@ -26,20 +26,12 @@ Reviewed October 25, 2026 against the supplied C5 assignment. The status below i
 | Written summary deliverable | docs/written_summary.md in Markdown. | Complete |
 | Source code deliverable | src/, tests/, scripts/, configuration and README. | Complete |
 | 1-2 paragraph reflection | docs/reflection.md, two paragraphs. | Complete |
-| 5-7 minute screencast | 5 minutes 31 seconds; final narrated MP4. | Complete |
+| 5-7 minute screencast | 5 minutes 55 seconds; final narrated MP4. | Complete |
 | Introduce all three tool categories in video | Opening and each narrated tool demonstration. | Complete |
-| Show full live agent/client/server round trip | Real model-selected tool, arguments, returned result, observed call log, and final agent answer. | Complete |
+| Show full live agent/client/server round trip | Three uninterrupted request-to-final-answer demonstrations at original speed; actual arguments, MCP results, and same-session task counts. See evidence/uninterrupted-live-agent.json and screencast-verification.json. | Complete |
 | Discuss challenges and solutions | Narration explains read/write boundaries, shared operations, predictable errors, and atomic retry handling. | Complete |
 | Repository URL | https://github.com/by-aseel/campus-study-planner-c5 (public). | Published |
 | Video URL | https://github.com/by-aseel/campus-study-planner-c5/raw/refs/heads/main/media/campus-study-planner-demonstration.mp4 | Published |
-
-## Submission review
-
-Keep API keys private. Submit the reading summary, reflection, source repository link, and actual hosted video link listed in `submission_notes.md`. The narration is synthesized with the speaker's explicit authorization.
-
-## Submission review
-
-Keep API keys private. Submit the reading summary, reflection, source repository link, and actual hosted video link listed in `submission_notes.md`. The narration is synthesized with the speaker's explicit authorization.
 
 ## Submission review
 

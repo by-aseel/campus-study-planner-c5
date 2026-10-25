@@ -117,6 +117,16 @@ The five natural-language scenarios demonstrate Data, Action, Orchestration, an 
 
 For free-plan limits, narrate and inspect results between scenarios rather than sending the entire demonstration in a burst. `docs/screencast_guide.md` supplies a six-minute run order, narration, prompts, and checks.
 
+### Interactive recording surface
+
+The submitted video uses this local dashboard with a fresh database:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/record_live_roundtrips.py --env-file .env --database data/new-recording.sqlite3 --report evidence/new-recording.json --session-file data/recording-session.json
+```
+
+Open `http://127.0.0.1:8774/`. Enter the five prompts listed in the generated session file, in order, and click **Run query** for each. **Next query** advances only after the agent answers. The dashboard displays actual model-selected arguments, MCP results, event times, final answers, and saved-task counts. Provider credentials remain on the host. The current video's five scenarios share one server session and database; its complete query-to-answer sequences run at original speed, with edits only between chapters. See `evidence/uninterrupted-live-agent.json` and `evidence/screencast-verification.json`.
+
 ## Deliverables and status
 
 - `docs/written_summary.md`: 300-400 word reading summary and source-level Fetch server critique.
@@ -126,7 +136,7 @@ For free-plan limits, narrate and inspect results between scenarios rather than 
 - `docs/requirements_checklist.md`: requirement-by-requirement review.
 - `docs/screencast_guide.md`: complete recording preparation.
 
-The project is verified: 43 automated tests and all five real Groq-backed scenarios passed. The final screencast is 5 minutes 31 seconds, edited from three genuine live browser captures, with authorized synthesized voice narration. [Public repository](https://github.com/by-aseel/campus-study-planner-c5). [Watch or download the screencast](https://github.com/by-aseel/campus-study-planner-c5/raw/refs/heads/main/media/campus-study-planner-demonstration.mp4). See `docs/submission_notes.md` for the recording details.
+The project is verified: 43 automated tests and all five real Groq-backed scenarios passed. The final screencast is 5 minutes 55 seconds, with uninterrupted Data, Action, and Orchestration round trips, failure and retry demonstrations, and authorized synthesized voice narration. [Public repository](https://github.com/by-aseel/campus-study-planner-c5). [Watch or download the screencast](https://github.com/by-aseel/campus-study-planner-c5/raw/refs/heads/main/media/campus-study-planner-demonstration.mp4). See `docs/submission_notes.md` for the recording details.
 
 ## Implementation references
 
