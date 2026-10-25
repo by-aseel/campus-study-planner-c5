@@ -1,12 +1,12 @@
 # Assignment requirements checklist
 
-Reviewed October 25, 2026 against the supplied C5 assignment. This distinguishes implemented and tested work from the remaining live demonstration and publication requirements.
+Reviewed October 25, 2026 against the supplied C5 assignment. The status below is grounded in source, test reports, actual live model calls, and the final narrated video.
 
 | Assignment requirement | Evidence | Status |
 |---|---|---|
 | Read the assigned Hugging Face article | Written summary cites the assigned page and its linked full article. | Complete |
 | Explore an existing MCP implementation | Summary critiques the official Fetch source and records its inspection date. | Complete; mutable branch source is disclosed. |
-| Write 300-400 words | Summary is 368 words, excluding heading and source details. | Complete |
+| Write 300-400 words | Summary is 371 words, excluding heading and source details. | Complete |
 | Explain Host, Client, and Server | Summary and README explain the relationships and actual call flow. | Complete |
 | Critique tool design | Source-level Fetch critique covers single purpose, clear interfaces and predictable behavior. | Complete |
 | Choose a theme | Campus study planner with explicitly fictional sample catalog. | Complete |
@@ -26,18 +26,17 @@ Reviewed October 25, 2026 against the supplied C5 assignment. This distinguishes
 | Written summary deliverable | docs/written_summary.md in Markdown. | Complete |
 | Source code deliverable | src/, tests/, scripts/, configuration and README. | Complete |
 | 1-2 paragraph reflection | docs/reflection.md, two paragraphs. | Complete |
-| 5-7 minute screencast | 5 minute 33 second visual screencast captured from two genuine live runs; narration is being completed. | Pending |
-| Introduce all three tool categories in video | Covered by recording guide. | Pending recording |
-| Show full live agent/client/server round trip | Host logs actual traffic; paused demo provides natural-language scenarios. | Live run verified; visual recording captured; final narration pending |
-| Discuss challenges and solutions | Guide covers shared operations, side effects, failures and idempotency. | Pending recording |
-| Repository URL | Add real URL to docs/submission_notes.md. | Pending publication |
-| Video URL | Add real URL to docs/submission_notes.md. | Pending recording and hosting |
+| 5-7 minute screencast | 5 minutes 31 seconds; final narrated MP4. | Complete |
+| Introduce all three tool categories in video | Opening and each narrated tool demonstration. | Complete |
+| Show full live agent/client/server round trip | Real model-selected tool, arguments, returned result, observed call log, and final agent answer. | Complete |
+| Discuss challenges and solutions | Narration explains read/write boundaries, shared operations, predictable errors, and atomic retry handling. | Complete |
+| Repository URL | https://github.com/by-aseel/campus-study-planner-c5 (public). | Published |
+| Video URL | https://github.com/by-aseel/campus-study-planner-c5/blob/main/media/campus-study-planner-demonstration.mp4 | Published |
 
-## Final steps
+## Submission review
 
-1. Keep the configured Groq key private. The approved assignment key uses a 30-day expiration.
-2. Review the passing live reports and final narrated screencast.
-3. Complete the authorized voice narration and watch the final video.
-4. Publish the repository and video, then enter their actual URLs in the submission notes.
+Keep API keys private. Submit the reading summary, reflection, source repository link, and actual hosted video link listed in `submission_notes.md`. The narration is synthesized with the speaker's explicit authorization.
 
-Local integration tests and a scripted model do not replace the required live model demonstration. No completed video or invented publication links are claimed.
+## Submission review
+
+Keep API keys private. Submit the reading summary, reflection, source repository link, and actual hosted video link listed in `submission_notes.md`. The narration is synthesized with the speaker's explicit authorization.

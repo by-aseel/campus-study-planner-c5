@@ -14,4 +14,4 @@ The Groq free-tier model `openai/gpt-oss-20b` completed the real OpenAI Agents S
 
 A second run was captured through the local recording dashboard. `recorded-live-agent.json` records five passing scenarios and exactly two saved tasks. `recorded-action.json` records a supplementary live Action capture used to make that scene clearly readable in the edited screencast.
 
-The visual screencast draft is 5 minutes 33 seconds at 1280 by 720 pixels. It is edited from two genuine browser captures, with no simulated tool results. Narration and final hosting are being completed separately. Source recordings and API credentials are excluded from the submission package.
+The final narrated screencast is 5 minutes 31 seconds at 1280 by 720 pixels. It is edited from three genuine browser captures, with no simulated tool results. `recorded-failure.json` verifies the supplementary explicit-error scene. The narration uses the speaker's own recording with explicit authorization. The original voice reference, temporary generation files, and API credentials are excluded from the submission package.

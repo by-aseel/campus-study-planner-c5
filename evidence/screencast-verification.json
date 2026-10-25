@@ -1,0 +1,52 @@
+{
+  "duration_seconds": 330.64,
+  "width": 1280,
+  "height": 720,
+  "fps": 25,
+  "audio_codec": "AAC",
+  "full_file_decode_passed": true,
+  "narration": "Qwen TTS and local OpenVoice conversion of the speaker's explicitly authorized voice and approved preview",
+  "visual_source": "Three genuine live browser captures; explanatory holds and edits disclosed",
+  "narration_segments": [
+    {
+      "index": 0,
+      "audio_seconds": 38.458,
+      "duration": 40.458185941043084
+    },
+    {
+      "index": 1,
+      "audio_seconds": 29.794,
+      "duration": 35
+    },
+    {
+      "index": 2,
+      "audio_seconds": 31.074,
+      "duration": 38
+    },
+    {
+      "index": 3,
+      "audio_seconds": 36.114,
+      "duration": 42
+    },
+    {
+      "index": 4,
+      "audio_seconds": 29.874,
+      "duration": 35
+    },
+    {
+      "index": 5,
+      "audio_seconds": 33.954,
+      "duration": 40
+    },
+    {
+      "index": 6,
+      "audio_seconds": 38.737,
+      "duration": 42
+    },
+    {
+      "index": 7,
+      "audio_seconds": 56.169,
+      "duration": 58.16925170068027
+    }
+  ]
+}

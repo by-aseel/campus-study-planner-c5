@@ -2,12 +2,10 @@
 
 Project: Campus Study Planner - C5 Agent Tools
 
-The written reading summary is `docs/written_summary.md`; the two-paragraph reflection is `docs/reflection.md`. Source code, dependency configuration, instructions, and tests are in this project.
-
 **Repository URL:** https://github.com/by-aseel/campus-study-planner-c5 (public)
 
-**Screencast URL:** still to be recorded, hosted, and added.
+**Screencast URL:** https://github.com/by-aseel/campus-study-planner-c5/blob/main/media/campus-study-planner-demonstration.mp4
 
-Do not submit these pending fields as completed deliverables. Use `docs/screencast_guide.md` to record the required 5-7 minute demonstration. Include the actual model-backed round trip and name all three tool categories.
+The screencast is 5 minutes 31 seconds, with authorized synthesized narration in the student's own voice. It shows exactly three tool categories, real model-selected MCP calls, an explicit lookup failure, and safe retry. It is edited from three genuine browser captures. Explanatory pauses and result views are extended; the browser clock shows source-run time. Supplementary Action and failure captures use separate databases from the main five-scenario run. Original voice references and API credentials are excluded.
 
-The sample catalog is fictional. SQLite persistence is real. Automated local verification is recorded in `evidence/`; it is distinct from live provider-backed demonstration evidence.
+Submit `docs/written_summary.md` (371 words using the recorded count), `docs/reflection.md` (two paragraphs), the source repository, and the video link. The catalog is fictional sample data; saved SQLite tasks are real. `evidence/` contains passing transport, SDK, and live-provider results.
