@@ -1,0 +1,250 @@
+{
+  "provider": "groq",
+  "requested_model": "openai/gpt-oss-20b",
+  "mode": "Live OpenAI Agents SDK -> MCP stdio -> FastMCP",
+  "timestamp_utc": "2026-10-25T09:19:07.634773+00:00",
+  "scenarios": [
+    {
+      "scenario": "DATA: information only",
+      "prompt": "Find a study resource about Python async. Do not save a task.",
+      "expected_tool": "find_study_resource",
+      "correct_tool_outcome": true,
+      "calls": [
+        {
+          "tool": "find_study_resource",
+          "arguments": {
+            "topic": "Python async"
+          },
+          "result": {
+            "_meta": {
+              "io.modelcontextprotocol/serverInfo": {
+                "name": "Campus Study Planner",
+                "version": "4.1.3"
+              }
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"resource_id\":\"demo-python-async-01\",\"topic\":\"Python async\",\"title\":\"Python Async Practice Pack\",\"summary\":\"A fictional practice pack covering coroutines, await, concurrent I/O and exception handling.\",\"location\":\"Demo Learning Hub / Computing Shelf / PA-101 (fictional)\",\"focus_points\":[\"Explain async and await\",\"Compare sequential and concurrent I/O\",\"Handle exceptions in coroutines\"],\"is_sample\":true}",
+                "annotations": null,
+                "_meta": null
+              }
+            ],
+            "structuredContent": {
+              "resource_id": "demo-python-async-01",
+              "topic": "Python async",
+              "title": "Python Async Practice Pack",
+              "summary": "A fictional practice pack covering coroutines, await, concurrent I/O and exception handling.",
+              "location": "Demo Learning Hub / Computing Shelf / PA-101 (fictional)",
+              "focus_points": [
+                "Explain async and await",
+                "Compare sequential and concurrent I/O",
+                "Handle exceptions in coroutines"
+              ],
+              "is_sample": true
+            },
+            "isError": false,
+            "resultType": "complete"
+          }
+        }
+      ],
+      "answer": "**Python async**  \n**Title:** *Python Async Practice Pack*  \n**Summary:** A fictional practice pack covering coroutines, await, concurrent I/O and exception handling.  \n**Location:** Demo Learning Hub / Computing Shelf / PA‑101 (fictional)  \n**Focus points:**  \n- Explain async and await  \n- Compare sequential and concurrent I/O  \n- Handle exceptions in coroutines"
+    },
+    {
+      "scenario": "ACTION: save a known title",
+      "prompt": "Save a 25-minute study task for 'My REST revision notes'. Use request_id 'recording-bd82c8ab8c-action'.",
+      "expected_tool": "create_study_task",
+      "correct_tool_outcome": true,
+      "calls": [
+        {
+          "tool": "create_study_task",
+          "arguments": {
+            "minutes": 25,
+            "request_id": "recording-bd82c8ab8c-action",
+            "resource_title": "My REST revision notes"
+          },
+          "result": {
+            "_meta": {
+              "io.modelcontextprotocol/serverInfo": {
+                "name": "Campus Study Planner",
+                "version": "4.1.3"
+              }
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"task_id\":\"44844390-23b0-4994-8b0c-5db4eb42b8ad\",\"resource_title\":\"My REST revision notes\",\"minutes\":25,\"request_id\":\"recording-bd82c8ab8c-action\",\"status\":\"planned\",\"created_at\":\"2026-10-25T09:16:21+00:00\"}",
+                "annotations": null,
+                "_meta": null
+              }
+            ],
+            "structuredContent": {
+              "task_id": "44844390-23b0-4994-8b0c-5db4eb42b8ad",
+              "resource_title": "My REST revision notes",
+              "minutes": 25,
+              "request_id": "recording-bd82c8ab8c-action",
+              "status": "planned",
+              "created_at": "2026-10-25T09:16:21+00:00"
+            },
+            "isError": false,
+            "resultType": "complete"
+          }
+        }
+      ],
+      "answer": "Task saved: **My REST revision notes** – 25 minutes (task_id 44844390‑23b0‑4994‑8b0c‑5db4eb42b8ad)."
+    },
+    {
+      "scenario": "ORCHESTRATION: lookup then save",
+      "prompt": "Find a resource about MCP tools and save a 40-minute study session. Use request_id 'recording-bd82c8ab8c-plan'.",
+      "expected_tool": "plan_study_session",
+      "correct_tool_outcome": true,
+      "calls": [
+        {
+          "tool": "plan_study_session",
+          "arguments": {
+            "minutes": 40,
+            "request_id": "recording-bd82c8ab8c-plan",
+            "topic": "MCP tools"
+          },
+          "result": {
+            "_meta": {
+              "io.modelcontextprotocol/serverInfo": {
+                "name": "Campus Study Planner",
+                "version": "4.1.3"
+              }
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"resource\":{\"resource_id\":\"demo-mcp-tools-01\",\"topic\":\"MCP tools\",\"title\":\"MCP Tool Design Guide\",\"summary\":\"A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.\",\"location\":\"Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)\",\"focus_points\":[\"Trace the host-client-server round trip\",\"Separate reads from side effects\",\"Define typed schemas and predictable errors\"],\"is_sample\":true},\"task\":{\"task_id\":\"dce33bc4-bcfc-4e05-b274-d07d85cd24a6\",\"resource_title\":\"MCP Tool Design Guide\",\"minutes\":40,\"request_id\":\"recording-bd82c8ab8c-plan\",\"status\":\"planned\",\"created_at\":\"2026-10-25T09:17:16+00:00\"}}",
+                "annotations": null,
+                "_meta": null
+              }
+            ],
+            "structuredContent": {
+              "resource": {
+                "resource_id": "demo-mcp-tools-01",
+                "topic": "MCP tools",
+                "title": "MCP Tool Design Guide",
+                "summary": "A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.",
+                "location": "Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)",
+                "focus_points": [
+                  "Trace the host-client-server round trip",
+                  "Separate reads from side effects",
+                  "Define typed schemas and predictable errors"
+                ],
+                "is_sample": true
+              },
+              "task": {
+                "task_id": "dce33bc4-bcfc-4e05-b274-d07d85cd24a6",
+                "resource_title": "MCP Tool Design Guide",
+                "minutes": 40,
+                "request_id": "recording-bd82c8ab8c-plan",
+                "status": "planned",
+                "created_at": "2026-10-25T09:17:16+00:00"
+              }
+            },
+            "isError": false,
+            "resultType": "complete"
+          }
+        }
+      ],
+      "answer": "Resource found: **“MCP Tool Design Guide”** – a guide on MCP host/client/server roles and focused Data, Action and Orchestration tools.  \nStudy session saved: task_id **dce33bc4-bcfc-4e05-b274-d07d85cd24a6**, 40 minutes."
+    },
+    {
+      "scenario": "FAILURE: unavailable topic",
+      "prompt": "Try looking up a study resource about underwater basket weaving. Report the lookup result without substituting another topic.",
+      "expected_tool": "find_study_resource",
+      "correct_tool_outcome": true,
+      "calls": [
+        {
+          "tool": "find_study_resource",
+          "arguments": {
+            "topic": "underwater basket weaving"
+          },
+          "result": {
+            "_meta": {
+              "io.modelcontextprotocol/serverInfo": {
+                "name": "Campus Study Planner",
+                "version": "4.1.3"
+              }
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Unknown topic. Available topics: Python async, REST APIs, MCP tools. Use a topic name or documented alias.",
+                "annotations": null,
+                "_meta": null
+              }
+            ],
+            "structuredContent": null,
+            "isError": true,
+            "resultType": "complete"
+          }
+        }
+      ],
+      "answer": "Unknown topic. Available topics: Python async, REST APIs, MCP tools. Use a topic name or documented alias."
+    },
+    {
+      "scenario": "RETRY: same intended task",
+      "prompt": "Find a resource about MCP tools and save a 40-minute study session. This is an identical retry: use request_id 'recording-bd82c8ab8c-plan'.",
+      "expected_tool": "plan_study_session",
+      "correct_tool_outcome": true,
+      "calls": [
+        {
+          "tool": "plan_study_session",
+          "arguments": {
+            "minutes": 40,
+            "request_id": "recording-bd82c8ab8c-plan",
+            "topic": "MCP tools"
+          },
+          "result": {
+            "_meta": {
+              "io.modelcontextprotocol/serverInfo": {
+                "name": "Campus Study Planner",
+                "version": "4.1.3"
+              }
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"resource\":{\"resource_id\":\"demo-mcp-tools-01\",\"topic\":\"MCP tools\",\"title\":\"MCP Tool Design Guide\",\"summary\":\"A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.\",\"location\":\"Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)\",\"focus_points\":[\"Trace the host-client-server round trip\",\"Separate reads from side effects\",\"Define typed schemas and predictable errors\"],\"is_sample\":true},\"task\":{\"task_id\":\"dce33bc4-bcfc-4e05-b274-d07d85cd24a6\",\"resource_title\":\"MCP Tool Design Guide\",\"minutes\":40,\"request_id\":\"recording-bd82c8ab8c-plan\",\"status\":\"planned\",\"created_at\":\"2026-10-25T09:17:16+00:00\"}}",
+                "annotations": null,
+                "_meta": null
+              }
+            ],
+            "structuredContent": {
+              "resource": {
+                "resource_id": "demo-mcp-tools-01",
+                "topic": "MCP tools",
+                "title": "MCP Tool Design Guide",
+                "summary": "A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.",
+                "location": "Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)",
+                "focus_points": [
+                  "Trace the host-client-server round trip",
+                  "Separate reads from side effects",
+                  "Define typed schemas and predictable errors"
+                ],
+                "is_sample": true
+              },
+              "task": {
+                "task_id": "dce33bc4-bcfc-4e05-b274-d07d85cd24a6",
+                "resource_title": "MCP Tool Design Guide",
+                "minutes": 40,
+                "request_id": "recording-bd82c8ab8c-plan",
+                "status": "planned",
+                "created_at": "2026-10-25T09:17:16+00:00"
+              }
+            },
+            "isError": false,
+            "resultType": "complete"
+          }
+        }
+      ],
+      "answer": "Resource found: **“MCP Tool Design Guide”** – a guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.  \nStudy session saved: **task_id dce33bc4-bcfc-4e05-b274-d07d85cd24a6**, 40 minutes, request_id `recording-bd82c8ab8c-plan`."
+    }
+  ],
+  "identical_retry_returned_same_task": true,
+  "final_database_row_count": 2,
+  "passed": true
+}

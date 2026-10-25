@@ -1,0 +1,35 @@
+{
+  "notice": "All records and campus locations in this catalog are fictional sample data created for this assignment. No live university service is queried.",
+  "resources": [
+    {
+      "resource_id": "demo-python-async-01",
+      "topic": "Python async",
+      "aliases": ["python", "asyncio", "async python", "asynchronous python"],
+      "title": "Python Async Practice Pack",
+      "summary": "A fictional practice pack covering coroutines, await, concurrent I/O and exception handling.",
+      "location": "Demo Learning Hub / Computing Shelf / PA-101 (fictional)",
+      "focus_points": ["Explain async and await", "Compare sequential and concurrent I/O", "Handle exceptions in coroutines"],
+      "is_sample": true
+    },
+    {
+      "resource_id": "demo-rest-apis-01",
+      "topic": "REST APIs",
+      "aliases": ["rest", "http", "rest api", "apis", "http apis"],
+      "title": "REST API Design Worksheet",
+      "summary": "A fictional worksheet on HTTP methods, resource-oriented endpoints, JSON payloads and status codes.",
+      "location": "Demo Learning Hub / Networking Shelf / RA-102 (fictional)",
+      "focus_points": ["Match HTTP methods to operations", "Design clear resource endpoints", "Interpret success and error responses"],
+      "is_sample": true
+    },
+    {
+      "resource_id": "demo-mcp-tools-01",
+      "topic": "MCP tools",
+      "aliases": ["mcp", "model context protocol", "agent tools", "fastmcp"],
+      "title": "MCP Tool Design Guide",
+      "summary": "A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.",
+      "location": "Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)",
+      "focus_points": ["Trace the host-client-server round trip", "Separate reads from side effects", "Define typed schemas and predictable errors"],
+      "is_sample": true
+    }
+  ]
+}

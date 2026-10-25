@@ -1,0 +1,602 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-24T22:34:57.143611+00:00",
+  "scope": "Real MCP stdio subprocess integration; no model inference or API calls.",
+  "versions": {
+    "fastmcp": "4.1.3",
+    "mcp": "2.3.0",
+    "openai-agents": "0.24.0"
+  },
+  "calls": [
+    {
+      "phase": "initial process",
+      "tool": "find_study_resource",
+      "arguments": {
+        "topic": "MCP tools"
+      },
+      "is_error": false,
+      "structured_content": {
+        "resource_id": "demo-mcp-tools-01",
+        "topic": "MCP tools",
+        "title": "MCP Tool Design Guide",
+        "summary": "A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.",
+        "location": "Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)",
+        "focus_points": [
+          "Trace the host-client-server round trip",
+          "Separate reads from side effects",
+          "Define typed schemas and predictable errors"
+        ],
+        "is_sample": true
+      },
+      "text_content": [
+        "{\"resource_id\":\"demo-mcp-tools-01\",\"topic\":\"MCP tools\",\"title\":\"MCP Tool Design Guide\",\"summary\":\"A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.\",\"location\":\"Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)\",\"focus_points\":[\"Trace the host-client-server round trip\",\"Separate reads from side effects\",\"Define typed schemas and predictable errors\"],\"is_sample\":true}"
+      ]
+    },
+    {
+      "phase": "initial process",
+      "tool": "find_study_resource",
+      "arguments": {
+        "topic": "unavailable topic"
+      },
+      "is_error": true,
+      "structured_content": null,
+      "text_content": [
+        "Unknown topic. Available topics: Python async, REST APIs, MCP tools. Use a topic name or documented alias."
+      ]
+    },
+    {
+      "phase": "initial process",
+      "tool": "create_study_task",
+      "arguments": {
+        "resource_title": "My personal review notes",
+        "minutes": 4,
+        "request_id": "verify-action-001"
+      },
+      "is_error": true,
+      "structured_content": null,
+      "text_content": [
+        "1 validation error for call[create_study_task]\nminutes\n  Input should be greater than or equal to 5 [type=greater_than_equal, input_value=4, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.14/v/greater_than_equal"
+      ]
+    },
+    {
+      "phase": "initial process",
+      "tool": "plan_study_session",
+      "arguments": {
+        "topic": "unavailable topic",
+        "minutes": 30,
+        "request_id": "verify-plan-001"
+      },
+      "is_error": true,
+      "structured_content": null,
+      "text_content": [
+        "Unknown topic. Available topics: Python async, REST APIs, MCP tools. Use a topic name or documented alias."
+      ]
+    },
+    {
+      "phase": "initial process",
+      "tool": "create_study_task",
+      "arguments": {
+        "resource_title": "My personal review notes",
+        "minutes": 25,
+        "request_id": "verify-action-001"
+      },
+      "is_error": false,
+      "structured_content": {
+        "task_id": "df1f5b76-4e9e-4217-be98-8a092838a8e7",
+        "resource_title": "My personal review notes",
+        "minutes": 25,
+        "request_id": "verify-action-001",
+        "status": "planned",
+        "created_at": "2026-10-24T22:35:00+00:00"
+      },
+      "text_content": [
+        "{\"task_id\":\"df1f5b76-4e9e-4217-be98-8a092838a8e7\",\"resource_title\":\"My personal review notes\",\"minutes\":25,\"request_id\":\"verify-action-001\",\"status\":\"planned\",\"created_at\":\"2026-10-24T22:35:00+00:00\"}"
+      ]
+    },
+    {
+      "phase": "initial process",
+      "tool": "create_study_task",
+      "arguments": {
+        "resource_title": "My personal review notes",
+        "minutes": 25,
+        "request_id": "verify-action-001"
+      },
+      "is_error": false,
+      "structured_content": {
+        "task_id": "df1f5b76-4e9e-4217-be98-8a092838a8e7",
+        "resource_title": "My personal review notes",
+        "minutes": 25,
+        "request_id": "verify-action-001",
+        "status": "planned",
+        "created_at": "2026-10-24T22:35:00+00:00"
+      },
+      "text_content": [
+        "{\"task_id\":\"df1f5b76-4e9e-4217-be98-8a092838a8e7\",\"resource_title\":\"My personal review notes\",\"minutes\":25,\"request_id\":\"verify-action-001\",\"status\":\"planned\",\"created_at\":\"2026-10-24T22:35:00+00:00\"}"
+      ]
+    },
+    {
+      "phase": "initial process",
+      "tool": "create_study_task",
+      "arguments": {
+        "resource_title": "My personal review notes",
+        "minutes": 45,
+        "request_id": "verify-action-001"
+      },
+      "is_error": true,
+      "structured_content": null,
+      "text_content": [
+        "request_id already exists with a different resource_title or minutes. Reuse the original payload to retry, or choose a new request_id for a new task."
+      ]
+    },
+    {
+      "phase": "initial process",
+      "tool": "plan_study_session",
+      "arguments": {
+        "topic": "MCP tools",
+        "minutes": 30,
+        "request_id": "verify-plan-001"
+      },
+      "is_error": false,
+      "structured_content": {
+        "resource": {
+          "resource_id": "demo-mcp-tools-01",
+          "topic": "MCP tools",
+          "title": "MCP Tool Design Guide",
+          "summary": "A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.",
+          "location": "Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)",
+          "focus_points": [
+            "Trace the host-client-server round trip",
+            "Separate reads from side effects",
+            "Define typed schemas and predictable errors"
+          ],
+          "is_sample": true
+        },
+        "task": {
+          "task_id": "23502096-b951-46cb-8fee-89ddf11c497a",
+          "resource_title": "MCP Tool Design Guide",
+          "minutes": 30,
+          "request_id": "verify-plan-001",
+          "status": "planned",
+          "created_at": "2026-10-24T22:35:00+00:00"
+        }
+      },
+      "text_content": [
+        "{\"resource\":{\"resource_id\":\"demo-mcp-tools-01\",\"topic\":\"MCP tools\",\"title\":\"MCP Tool Design Guide\",\"summary\":\"A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.\",\"location\":\"Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)\",\"focus_points\":[\"Trace the host-client-server round trip\",\"Separate reads from side effects\",\"Define typed schemas and predictable errors\"],\"is_sample\":true},\"task\":{\"task_id\":\"23502096-b951-46cb-8fee-89ddf11c497a\",\"resource_title\":\"MCP Tool Design Guide\",\"minutes\":30,\"request_id\":\"verify-plan-001\",\"status\":\"planned\",\"created_at\":\"2026-10-24T22:35:00+00:00\"}}"
+      ]
+    },
+    {
+      "phase": "initial process",
+      "tool": "find_study_resource",
+      "arguments": {
+        "topic": "Python async"
+      },
+      "is_error": false,
+      "structured_content": {
+        "resource_id": "demo-python-async-01",
+        "topic": "Python async",
+        "title": "Python Async Practice Pack",
+        "summary": "A fictional practice pack covering coroutines, await, concurrent I/O and exception handling.",
+        "location": "Demo Learning Hub / Computing Shelf / PA-101 (fictional)",
+        "focus_points": [
+          "Explain async and await",
+          "Compare sequential and concurrent I/O",
+          "Handle exceptions in coroutines"
+        ],
+        "is_sample": true
+      },
+      "text_content": [
+        "{\"resource_id\":\"demo-python-async-01\",\"topic\":\"Python async\",\"title\":\"Python Async Practice Pack\",\"summary\":\"A fictional practice pack covering coroutines, await, concurrent I/O and exception handling.\",\"location\":\"Demo Learning Hub / Computing Shelf / PA-101 (fictional)\",\"focus_points\":[\"Explain async and await\",\"Compare sequential and concurrent I/O\",\"Handle exceptions in coroutines\"],\"is_sample\":true}"
+      ]
+    },
+    {
+      "phase": "restarted process",
+      "tool": "create_study_task",
+      "arguments": {
+        "resource_title": "My personal review notes",
+        "minutes": 25,
+        "request_id": "verify-action-001"
+      },
+      "is_error": false,
+      "structured_content": {
+        "task_id": "df1f5b76-4e9e-4217-be98-8a092838a8e7",
+        "resource_title": "My personal review notes",
+        "minutes": 25,
+        "request_id": "verify-action-001",
+        "status": "planned",
+        "created_at": "2026-10-24T22:35:00+00:00"
+      },
+      "text_content": [
+        "{\"task_id\":\"df1f5b76-4e9e-4217-be98-8a092838a8e7\",\"resource_title\":\"My personal review notes\",\"minutes\":25,\"request_id\":\"verify-action-001\",\"status\":\"planned\",\"created_at\":\"2026-10-24T22:35:00+00:00\"}"
+      ]
+    },
+    {
+      "phase": "restarted process",
+      "tool": "plan_study_session",
+      "arguments": {
+        "topic": "MCP tools",
+        "minutes": 30,
+        "request_id": "verify-plan-001"
+      },
+      "is_error": false,
+      "structured_content": {
+        "resource": {
+          "resource_id": "demo-mcp-tools-01",
+          "topic": "MCP tools",
+          "title": "MCP Tool Design Guide",
+          "summary": "A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.",
+          "location": "Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)",
+          "focus_points": [
+            "Trace the host-client-server round trip",
+            "Separate reads from side effects",
+            "Define typed schemas and predictable errors"
+          ],
+          "is_sample": true
+        },
+        "task": {
+          "task_id": "23502096-b951-46cb-8fee-89ddf11c497a",
+          "resource_title": "MCP Tool Design Guide",
+          "minutes": 30,
+          "request_id": "verify-plan-001",
+          "status": "planned",
+          "created_at": "2026-10-24T22:35:00+00:00"
+        }
+      },
+      "text_content": [
+        "{\"resource\":{\"resource_id\":\"demo-mcp-tools-01\",\"topic\":\"MCP tools\",\"title\":\"MCP Tool Design Guide\",\"summary\":\"A fictional guide to MCP host/client/server roles and focused Data, Action and Orchestration tools.\",\"location\":\"Demo Learning Hub / Agentic Systems Shelf / MT-103 (fictional)\",\"focus_points\":[\"Trace the host-client-server round trip\",\"Separate reads from side effects\",\"Define typed schemas and predictable errors\"],\"is_sample\":true},\"task\":{\"task_id\":\"23502096-b951-46cb-8fee-89ddf11c497a\",\"resource_title\":\"MCP Tool Design Guide\",\"minutes\":30,\"request_id\":\"verify-plan-001\",\"status\":\"planned\",\"created_at\":\"2026-10-24T22:35:00+00:00\"}}"
+      ]
+    }
+  ],
+  "checks": [
+    "Exactly three described tools advertise typed input and output schemas.",
+    "Data lookup succeeds without a persistence side effect.",
+    "Each tool exposes a clear is_error failure; failed lookup/orchestration writes nothing.",
+    "Action persists a task, deduplicates identical retries, and rejects conflicting retries.",
+    "Orchestration combines the lookup result with a persisted task.",
+    "Data lookup also leaves an existing database unchanged.",
+    "Tasks survive a fresh server process; retries leave exactly two database rows."
+  ],
+  "tools": [
+    {
+      "name": "find_study_resource",
+      "title": "Find a study resource",
+      "description": "DATA: Retrieve one learning resource from the fictional, bundled campus catalog.\n\nUse for information-only requests. Returns the resource title, sample campus\nlocation, summary and focus points. Matching is exact against a canonical\ntopic or its documented aliases, ignoring case/whitespace. Does not touch\ntask storage. Unknown topics produce an error listing available topics.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "topic": {
+            "description": "Topic or alias: Python async (python, asyncio), REST APIs (rest, http), or MCP tools (mcp). Case and whitespace are ignored.",
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "topic"
+        ]
+      },
+      "outputSchema": {
+        "additionalProperties": false,
+        "description": "One record from the bundled, explicitly fictional demonstration catalog.",
+        "properties": {
+          "resource_id": {
+            "description": "Stable identifier in the sample catalog.",
+            "type": "string"
+          },
+          "topic": {
+            "description": "Canonical topic name.",
+            "type": "string"
+          },
+          "title": {
+            "description": "Title to use when creating a study task.",
+            "type": "string"
+          },
+          "summary": {
+            "description": "What this sample learning resource covers.",
+            "type": "string"
+          },
+          "location": {
+            "description": "Fictional campus location, not a real reservation or URL.",
+            "type": "string"
+          },
+          "focus_points": {
+            "description": "Suggested learning objectives.",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "is_sample": {
+            "const": true,
+            "default": true,
+            "description": "Always true: this is fictional sample data.",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "resource_id",
+          "topic",
+          "title",
+          "summary",
+          "location",
+          "focus_points"
+        ],
+        "type": "object"
+      },
+      "annotations": {
+        "title": "Find a study resource",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "create_study_task",
+      "title": "Create a study task",
+      "description": "ACTION: Save one study intention to local, durable SQLite task storage.\n\nUse when the user asks to save a task for a known resource title. Returns\nits persisted identifier, title, duration, status, request key and original\nUTC creation time. This does not schedule a calendar event or reserve a\nresource. Identical request_id/payload retries return the original task;\nreusing a key with a different title or duration is an explicit error.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "resource_title": {
+            "description": "Title of the resource to study; use the exact lookup result title when available.",
+            "maxLength": 160,
+            "minLength": 1,
+            "type": "string"
+          },
+          "minutes": {
+            "description": "Study duration as a whole number of minutes, from 5 through 180.",
+            "maximum": 180,
+            "minimum": 5,
+            "type": "integer"
+          },
+          "request_id": {
+            "description": "Caller-chosen unique key for this intended task. Reuse the same key and payload for retries; use a fresh key for a new task.",
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "resource_title",
+          "minutes",
+          "request_id"
+        ]
+      },
+      "outputSchema": {
+        "additionalProperties": false,
+        "description": "A durably saved study intention; it is not a calendar appointment.",
+        "properties": {
+          "task_id": {
+            "description": "Unique identifier generated once and persisted.",
+            "type": "string"
+          },
+          "resource_title": {
+            "description": "Normalized study resource title.",
+            "maxLength": 160,
+            "minLength": 1,
+            "type": "string"
+          },
+          "minutes": {
+            "description": "Planned study duration in whole minutes.",
+            "maximum": 180,
+            "minimum": 5,
+            "type": "integer"
+          },
+          "request_id": {
+            "description": "Idempotency key supplied by the caller.",
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "status": {
+            "const": "planned",
+            "default": "planned",
+            "description": "New tasks are planned, not completed.",
+            "type": "string"
+          },
+          "created_at": {
+            "description": "Original creation timestamp in UTC ISO 8601 format.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "task_id",
+          "resource_title",
+          "minutes",
+          "request_id",
+          "created_at"
+        ],
+        "type": "object"
+      },
+      "annotations": {
+        "title": "Create a study task",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "plan_study_session",
+      "title": "Plan a study session",
+      "description": "ORCHESTRATION: Look up a topic, then save a task for the selected resource.\n\nUse for a higher-level request to find a suitable resource and save a study\nintention. Calls the same data operation followed by the same action\noperation; returns both typed results. Invalid input or unknown topic causes\nno task write. Identical retries reuse the saved task; conflicting request\nkeys fail clearly. Never call create_study_task again after this succeeds.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "topic": {
+            "description": "Topic or alias: Python async (python, asyncio), REST APIs (rest, http), or MCP tools (mcp). Case and whitespace are ignored.",
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "minutes": {
+            "description": "Study duration as a whole number of minutes, from 5 through 180.",
+            "maximum": 180,
+            "minimum": 5,
+            "type": "integer"
+          },
+          "request_id": {
+            "description": "Caller-chosen unique key for this intended task. Reuse the same key and payload for retries; use a fresh key for a new task.",
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "topic",
+          "minutes",
+          "request_id"
+        ]
+      },
+      "outputSchema": {
+        "additionalProperties": false,
+        "description": "The lookup result together with the task saved for that exact resource.",
+        "properties": {
+          "resource": {
+            "additionalProperties": false,
+            "description": "One record from the bundled, explicitly fictional demonstration catalog.",
+            "properties": {
+              "resource_id": {
+                "description": "Stable identifier in the sample catalog.",
+                "type": "string"
+              },
+              "topic": {
+                "description": "Canonical topic name.",
+                "type": "string"
+              },
+              "title": {
+                "description": "Title to use when creating a study task.",
+                "type": "string"
+              },
+              "summary": {
+                "description": "What this sample learning resource covers.",
+                "type": "string"
+              },
+              "location": {
+                "description": "Fictional campus location, not a real reservation or URL.",
+                "type": "string"
+              },
+              "focus_points": {
+                "description": "Suggested learning objectives.",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "is_sample": {
+                "const": true,
+                "default": true,
+                "description": "Always true: this is fictional sample data.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "resource_id",
+              "topic",
+              "title",
+              "summary",
+              "location",
+              "focus_points"
+            ],
+            "type": "object"
+          },
+          "task": {
+            "additionalProperties": false,
+            "description": "A durably saved study intention; it is not a calendar appointment.",
+            "properties": {
+              "task_id": {
+                "description": "Unique identifier generated once and persisted.",
+                "type": "string"
+              },
+              "resource_title": {
+                "description": "Normalized study resource title.",
+                "maxLength": 160,
+                "minLength": 1,
+                "type": "string"
+              },
+              "minutes": {
+                "description": "Planned study duration in whole minutes.",
+                "maximum": 180,
+                "minimum": 5,
+                "type": "integer"
+              },
+              "request_id": {
+                "description": "Idempotency key supplied by the caller.",
+                "maxLength": 100,
+                "minLength": 1,
+                "type": "string"
+              },
+              "status": {
+                "const": "planned",
+                "default": "planned",
+                "description": "New tasks are planned, not completed.",
+                "type": "string"
+              },
+              "created_at": {
+                "description": "Original creation timestamp in UTC ISO 8601 format.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "task_id",
+              "resource_title",
+              "minutes",
+              "request_id",
+              "created_at"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "resource",
+          "task"
+        ],
+        "type": "object"
+      },
+      "annotations": {
+        "title": "Plan a study session",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    }
+  ],
+  "persisted_tasks": [
+    {
+      "task_id": "df1f5b76-4e9e-4217-be98-8a092838a8e7",
+      "resource_title": "My personal review notes",
+      "minutes": 25,
+      "request_id": "verify-action-001",
+      "status": "planned",
+      "created_at": "2026-10-24T22:35:00+00:00"
+    },
+    {
+      "task_id": "23502096-b951-46cb-8fee-89ddf11c497a",
+      "resource_title": "MCP Tool Design Guide",
+      "minutes": 30,
+      "request_id": "verify-plan-001",
+      "status": "planned",
+      "created_at": "2026-10-24T22:35:00+00:00"
+    }
+  ],
+  "final_database_row_count": 2
+}
