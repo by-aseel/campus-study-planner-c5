@@ -1,6 +1,6 @@
 # Six-minute screencast guide
 
-This is a recording guide, not a completed video. Record an actual model-backed run. Use your own voice and explain the code you submit.
+This is a recording guide, not a completed video. Record an actual model-backed run and explain the code you submit. The submitted video uses authorized synthesized narration from the student's own voice sample.
 
 ## Before recording
 

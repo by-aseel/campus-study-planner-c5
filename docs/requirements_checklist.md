@@ -6,7 +6,7 @@ Reviewed October 25, 2026 against the supplied C5 assignment. The status below i
 |---|---|---|
 | Read the assigned Hugging Face article | Written summary cites the assigned page and its linked full article. | Complete |
 | Explore an existing MCP implementation | Summary critiques the official Fetch source and records its inspection date. | Complete; mutable branch source is disclosed. |
-| Write 300-400 words | Summary is 371 words, excluding heading and source details. | Complete |
+| Write 300-400 words | Summary meets the 300-400 word requirement, excluding the heading and source details. | Complete |
 | Explain Host, Client, and Server | Summary and README explain the relationships and actual call flow. | Complete |
 | Critique tool design | Source-level Fetch critique covers single purpose, clear interfaces and predictable behavior. | Complete |
 | Choose a theme | Campus study planner with explicitly fictional sample catalog. | Complete |
