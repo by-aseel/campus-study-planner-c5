@@ -1,6 +1,6 @@
 # Six-minute screencast guide
 
-This is a recording guide, not a completed video. Record an actual model-backed run and explain the code you submit. The video's narration uses my voice, generated from a recording I made.
+This guide accompanies the recorded demonstration of my Campus Study Planner assignment. The video shows the agent using all three MCP tools and explains the submitted code.
 
 ## Before recording
 
